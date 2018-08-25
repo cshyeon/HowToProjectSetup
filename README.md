@@ -33,5 +33,6 @@ git config user.name "your name" # or git config --global user.name "your name"
 - Make github repository
 
 ``` bash
+git add -A
 git commit -a -m "First project setup Commit"
 ```
