@@ -1,7 +1,7 @@
 # Project Setup
 How to set up a pre-development project
 
-## Preparation
+# Preparation
 
 ### Editor
 - vscode
@@ -11,19 +11,19 @@ How to set up a pre-development project
 - npm OR yarn   
 - git (+ Github account)
   
-## Setup
+# Setup
 
-0.0 Make project folder
+## 0. Make project folder
 - Type the below code on terminal (in editor, cmd, powershell or bash)
 ```bash
 mkdir foldername
 cd foldername 
 ```
-0.1 Make essential folder and files in project folder
+### Make essential folder and files in project folder
 - folder: dist, src
 - files: README.md
   
-1.0 VCS (Version Control System)  
+## 1. VCS (Version Control System)  
 ```bash
 git init # Setup the git on project folder
 git config user.email "your@email.com" # or git config --global user.email "your@email.com"
@@ -43,7 +43,7 @@ git remote add origin 'your.github.repository.url' # Add remote repository
 git push origin master  # Push the first commit to remote repository 
 ```
 
-1.1 Github SSH setting (optional)
+### Github SSH setting (optional)
 - Create your SSH key set
 ```bash
 cd ~ # your user account folder
@@ -62,7 +62,7 @@ git remote set-url origin "your github repository SSH!'s url"
 git remote show origin # Make sure fetch, push url has changed.
 ```
 
-1.2 Make git's dev branch
+### Make git's dev branch
 - 'master' branch will be used to stable code version.
 - 'dev' branch will be used to development stage.
 ```bash
