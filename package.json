@@ -1,0 +1,23 @@
+{
+  "name": "how-to-project-setup",
+  "version": "1.0.0",
+  "description": "How to set up a pre-development project",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cshyeon/HowToProjectSetup.git"
+  },
+  "keywords": [
+    "project",
+    "setup"
+  ],
+  "author": "cshyeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cshyeon/HowToProjectSetup/issues"
+  },
+  "homepage": "https://github.com/cshyeon/HowToProjectSetup#readme"
+}

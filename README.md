@@ -61,3 +61,12 @@ cat ~/.ssh/id_rsa.pub # Show public key's content
 git remote set-url origin "your github repository SSH!'s url"
 git remote show origin # Make sure fetch, push url has changed.
 ```
+
+1.2 Make git's dev branch
+- 'master' branch will be used to stable code version.
+- 'dev' branch will be used to development stage.
+```bash
+git branch dev    # Create dev branch
+git checkout dev  # Move to dev branch
+git push origin dev # Apply the dev branch to the remote repository.
+```
