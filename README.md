@@ -13,7 +13,23 @@ How to set up a pre-development project
   
 # Setup
 
-## 0. Make project folder
+## 0. vscode setting
+- Custom editor configuration  
+Open the command palette window(shortcut 'F1') -> open user settings -> user settings
+```javascript
+{
+    "files.eol": "\n",        // End of line 'LF'
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,  
+    "window.zoomLevel": 0,  
+}
+```
+
+### extensions
+- Install useful extension for develeopment.
+- Required extension: `ESLint`
+
+## 0.1 Make project folder
 - Type the below code on terminal (in editor, cmd, powershell or bash)
 ```bash
 mkdir foldername
@@ -23,6 +39,8 @@ cd foldername
 - folder: dist, src
 - files: README.md
   
+
+
 ## 1. VCS (Version Control System)  
 ```bash
 git init # Setup the git on project folder
@@ -69,4 +87,33 @@ git remote show origin # Make sure fetch, push url has changed.
 git branch dev    # Create dev branch
 git checkout dev  # Move to dev branch
 git push origin dev # Apply the dev branch to the remote repository.
+```
+
+## 2. NPM initialize
+- Create package.json file 
+```bash
+npm init # To create package.json file
+```
+
+## 3. Lint (eslint)
+- Setup eslint for code formatting
+```bash
+npm install --save-dev eslint eslint-config-airbnb-base eslint-plugin-import
+```
+
+- Create eslint configuration file `.eslintrc.js` in project's root folder
+```javascript
+module.exports = {
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "extends": "airbnb-base",
+    "plugins": ['import'],
+};
 ```
