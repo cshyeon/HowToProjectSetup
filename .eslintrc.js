@@ -8,6 +8,10 @@ module.exports = {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
-    "extends": "airbnb-base",
-    "plugins": ['import'],
+    "extends": [
+        "airbnb-base"
+    ],
+    "plugins": [        
+        'import'
+    ],
 };

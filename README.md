@@ -18,16 +18,26 @@ How to set up a pre-development project
 Open the command palette window(shortcut 'F1') -> open user settings -> user settings
 ```javascript
 {
+    /* Prettier */
+    "prettier.eslintIntegration": true,
+
+    /* File */
     "files.eol": "\n",        // End of line 'LF'
     "editor.tabSize": 2,
+
+    /* Editor */
     "editor.minimap.enabled": false,  
     "window.zoomLevel": 0,  
+
+    "search.exclude": {
+        "**/node_modules": true
+    }, 
 }
 ```
 
 ### extensions
 - Install useful extension for develeopment.
-- Required extension: `ESLint`
+- Required extension: `ESLint`, `Prettier`
 
 ## 0.1 Make project folder
 - Type the below code on terminal (in editor, cmd, powershell or bash)
@@ -113,7 +123,11 @@ module.exports = {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
-    "extends": "airbnb-base",
-    "plugins": ['import'],
+    "extends": [
+        "airbnb-base"
+    ],
+    "plugins": [        
+        'import'
+    ],
 };
 ```
