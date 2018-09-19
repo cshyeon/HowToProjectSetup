@@ -130,3 +130,33 @@ module.exports = {
     ],
 };
 ```
+
+# Vue.js project setup
+## 1. Use `vue-cli` webpack template
+- Install `vue-cli`
+```bash
+npm install -g @vue/cli # For vue-cli 3.0
+npm install -g @vue/cli-init # For vue-cli 2.0 !!Required in this setup
+```
+
+- Make `vue-cli` template
+```bash
+vue init webpack [foldername] # e.g) vue init webpack client
+#...
+#Vue build => standalone
+#vue-router => yes
+#Use Eslint => yes
+#ESlint preset => Airbnb
+#Unit tests => yes
+#Pick test runner => karma + mocha
+#e2e setup nightwatch => y
+#Should we run `npm install` ... => npm OR type manually `npm install`
+cd [foldername] # e.g) cd client
+```
+
+## 2. Install `sass` modules
+- To use `sass`, install modules
+```bash
+npm install -D node-sass sass-loader
+npm start
+```
